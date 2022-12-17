@@ -1,3 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:wght@300&display=swap");
 body {
   font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #555664;
+}
+body nav {
+  font-family: "Arvo", serif;
+}
+body h1 {
+  font-family: "Arvo", serif;
+}
+body h2 {
+  font-family: "Arvo", serif;
+}
+body h3 {
+  font-family: "Arvo", serif;
+}
+body a {
+  color: #555664;
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: underline;
+}
+body a:visited {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

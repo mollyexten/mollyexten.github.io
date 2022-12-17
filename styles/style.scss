@@ -1,3 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:wght@300&display=swap');
+
+// Font styles
+$primaryFont: 'Roboto', sans-serif;
+$headerFont: 'Arvo', serif;
+$fontColor: #555664;
+
 body {
     font-size: 20px;
+    font-family: $primaryFont;
+    color: $fontColor;
+    nav {
+        font-family: $headerFont;
+    }
+    h1 {
+        font-family: $headerFont;
+    }
+    h2 {
+        font-family: $headerFont;
+    }
+    h3 {
+        font-family: $headerFont;
+    }
+    a {
+        color: $fontColor;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        &:visited {
+            text-decoration: none;
+        }
+    }
 }
