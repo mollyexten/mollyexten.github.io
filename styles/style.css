@@ -25,4 +25,8 @@ body a:hover {
 }
 body a:visited {
   text-decoration: none;
+}
+
+.background-image {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
