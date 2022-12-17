@@ -1,0 +1,29 @@
+// Font import
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:wght@300&display=swap');
+
+// Variables
+$primaryFont: 'Roboto', sans-serif;
+$headerFont: 'Arvo', serif;
+$fontColor: #555664;
+
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+// Mixins
+@mixin standardFont{
+    font-size: $primaryFont;
+    color: $fontColor;
+    font-size: 20px;
+}
+@mixin linkStyles {
+    color: $fontColor;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    } &:visited {
+        text-decoration: none;
+    }
+}

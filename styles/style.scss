@@ -1,46 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:wght@300&display=swap');
+@import "./textStyles";
 
-// Font styles
-$primaryFont: 'Roboto', sans-serif;
-$headerFont: 'Arvo', serif;
-$fontColor: #555664;
+html, body {
+    margin: 0;
+}
 
 body {
-    font-size: 20px;
-    font-family: $primaryFont;
-    color: $fontColor;
-    h2 {
+    display: flex;
+    flex-direction: column;
+    @include standardFont();
+    h1, h2, h3 {
         font-family: $headerFont;
     }
     a {
-        color: $fontColor;
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
-        &:visited {
-            text-decoration: none;
-        }
+        @include linkStyles();
     }
     nav {
         font-family: $headerFont;
-    }
-    header {
-        h1 {
-            font-family: $headerFont;
-            position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 20vh;
+        h2 {
+            width: 33vw;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+            width: 67vw;
         }
     }
-    h3 {
-        font-family: $headerFont;
+    header {
+        background-image: url("../assets/header.webp");
+        height: 80vh;
+        background-size: cover;
     }
     .contact {
         background-image: url("../assets/contact.webp");
         background-size: cover;
+        height: 50vh;
     }
-}
-
-// Image styling
-.background-image {
-    width: 100%;
 }
