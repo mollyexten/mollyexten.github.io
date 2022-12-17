@@ -4,16 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #555664;
 }
-body nav {
-  font-family: "Arvo", serif;
-}
-body h1 {
-  font-family: "Arvo", serif;
-}
 body h2 {
-  font-family: "Arvo", serif;
-}
-body h3 {
   font-family: "Arvo", serif;
 }
 body a {
@@ -25,6 +16,20 @@ body a:hover {
 }
 body a:visited {
   text-decoration: none;
+}
+body nav {
+  font-family: "Arvo", serif;
+}
+body header h1 {
+  font-family: "Arvo", serif;
+  position: absolute;
+}
+body h3 {
+  font-family: "Arvo", serif;
+}
+body .contact {
+  background-image: url("../assets/contact.webp");
+  background-size: cover;
 }
 
 .background-image {

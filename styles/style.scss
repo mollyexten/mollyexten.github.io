@@ -9,16 +9,7 @@ body {
     font-size: 20px;
     font-family: $primaryFont;
     color: $fontColor;
-    nav {
-        font-family: $headerFont;
-    }
-    h1 {
-        font-family: $headerFont;
-    }
     h2 {
-        font-family: $headerFont;
-    }
-    h3 {
         font-family: $headerFont;
     }
     a {
@@ -30,6 +21,22 @@ body {
         &:visited {
             text-decoration: none;
         }
+    }
+    nav {
+        font-family: $headerFont;
+    }
+    header {
+        h1 {
+            font-family: $headerFont;
+            position: absolute;
+        }
+    }
+    h3 {
+        font-family: $headerFont;
+    }
+    .contact {
+        background-image: url("../assets/contact.webp");
+        background-size: cover;
     }
 }
 
