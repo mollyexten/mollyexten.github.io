@@ -16,7 +16,6 @@ ul li {
     display: flex;
   }
   body nav .mobile-nav .hamburger-icon {
-    margin-left: 0px;
     fill: #555664;
   }
   body nav .desktop-nav {
