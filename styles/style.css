@@ -1,20 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:wght@300&display=swap");
 @media (max-width: 640px) {
-  .mobile-nav {
+  body {
+    font-size: 16px;
+  }
+  body nav {
+    padding: 20px;
+  }
+  body nav h1 {
+    font-size: 12vmin;
+    width: 80%;
+  }
+  body nav .mobile-nav {
     display: flex;
   }
-  .desktop-nav {
+  body nav .desktop-nav {
     display: none;
   }
 }
 @media (min-width: 641px) {
-  .mobile-nav {
+  body {
+    font-size: 20px;
+  }
+  body .mobile-nav {
     display: none;
   }
-  .desktop-nav {
+  body .desktop-nav {
     display: flex;
   }
-  .desktop-nav ul {
+  body .desktop-nav ul {
     display: flex;
     justify-content: space-around;
     width: 67vw;
