@@ -13,6 +13,9 @@
   body nav .mobile-nav {
     display: flex;
   }
+  body nav .mobile-nav .hamburger-icon {
+    fill: #555664;
+  }
   body nav .desktop-nav {
     display: none;
   }
