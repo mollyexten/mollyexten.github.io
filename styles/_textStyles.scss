@@ -14,9 +14,8 @@ ul {
 
 // Mixins
 @mixin standardFont{
-    font-size: $primaryFont;
+    font-family: $primaryFont;
     color: $fontColor;
-    font-size: 20px;
 }
 @mixin linkStyles {
     color: $fontColor;

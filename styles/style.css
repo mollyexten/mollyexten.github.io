@@ -45,9 +45,8 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  font-size: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #555664;
-  font-size: 20px;
 }
 body h1, body h2, body h3 {
   font-family: "Arvo", serif;
