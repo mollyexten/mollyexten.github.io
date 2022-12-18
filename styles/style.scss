@@ -1,3 +1,4 @@
+@import "./responsiveStyles";
 @import "./textStyles";
 
 html, body {
@@ -24,11 +25,11 @@ body {
         h2 {
             width: 33vw;
         }
-        ul {
-            display: flex;
-            justify-content: space-around;
-            width: 67vw;
-        }
+        // ul {
+        //     display: flex;
+        //     justify-content: space-around;
+        //     width: 67vw;
+        // }
     }
     header {
         background-image: url("../assets/header.webp");

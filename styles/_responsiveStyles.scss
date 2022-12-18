@@ -1,3 +1,22 @@
-$mobile: 640px;
-$tablet: 920px;
-$desktop: 1024px;
+@media (max-width: 640px) {
+    .mobile-nav {
+        display: flex;
+    }
+    .desktop-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 641px ) {
+    .mobile-nav {
+        display: none;
+    }
+    .desktop-nav {
+        display: flex;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            width: 67vw;
+        }
+    }
+}
