@@ -3,41 +3,6 @@ ul li {
   list-style: none;
 }
 
-@media (max-width: 640px) {
-  body {
-    font-size: 16px;
-  }
-  body nav h1 {
-    font-size: 12vmin;
-    width: 80%;
-    padding: 20px;
-  }
-  body nav .mobile-nav {
-    display: flex;
-  }
-  body nav .mobile-nav .hamburger-icon {
-    fill: #555664;
-  }
-  body nav .desktop-nav {
-    display: none;
-  }
-}
-@media (min-width: 641px) {
-  body {
-    font-size: 20px;
-  }
-  body .mobile-nav {
-    display: none;
-  }
-  body .desktop-nav {
-    display: flex;
-  }
-  body .desktop-nav ul {
-    display: flex;
-    justify-content: space-around;
-    width: 67vw;
-  }
-}
 html, body {
   width: 100%;
 }
