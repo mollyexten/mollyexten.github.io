@@ -1,19 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:wght@300&display=swap");
+ul li {
+  list-style: none;
+}
+
 @media (max-width: 640px) {
   body {
     font-size: 16px;
   }
-  body nav {
-    padding: 20px;
-  }
   body nav h1 {
     font-size: 12vmin;
     width: 80%;
+    padding: 20px;
   }
   body nav .mobile-nav {
     display: flex;
   }
   body nav .mobile-nav .hamburger-icon {
+    margin-left: 0px;
     fill: #555664;
   }
   body nav .desktop-nav {
@@ -36,12 +39,8 @@
     width: 67vw;
   }
 }
-ul li {
-  list-style: none;
-}
-
 html, body {
-  margin: 0;
+  width: 100%;
 }
 
 body {
@@ -77,6 +76,7 @@ body nav h2 {
 }
 body header {
   background-image: url("../assets/header.webp");
+  width: 100%;
   height: 80vh;
   background-size: cover;
 }

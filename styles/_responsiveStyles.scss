@@ -2,14 +2,15 @@
     body {
         font-size: 16px;    
         nav {
-            padding: 20px;
             h1 {
                 font-size: 12vmin;
                 width: 80%;
+                padding: 20px;
             }
             .mobile-nav {
                 display: flex;
                 .hamburger-icon {
+                    margin-left: 0px;
                     fill: #555664;
                 }
             }
