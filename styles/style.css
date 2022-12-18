@@ -18,7 +18,6 @@ nav {
 nav h1 {
   font-size: 6vw;
   width: 50%;
-  text-align: center;
   margin: 0px;
   padding: 0px;
 }
@@ -41,6 +40,7 @@ nav ul {
   body nav h1 {
     font-size: 10vmin;
     align-self: center;
+    text-align: center;
     width: 100%;
   }
   body nav ul {
@@ -75,6 +75,20 @@ header h1 {
     font-size: 8vmin;
   }
 }
+section.about {
+  padding: 2%;
+}
+section.about h2 {
+  font-size: 5vw;
+}
+section.about .picture-bio {
+  display: flex;
+  flex-direction: row-reverse;
+}
+section.about .picture-bio img {
+  width: 30vw;
+}
+
 html, body {
   width: 100%;
 }
@@ -100,12 +114,6 @@ body a:visited {
 }
 body nav {
   font-family: "Arvo", serif;
-}
-body header {
-  background-image: url("../assets/header.webp");
-  width: 100vw;
-  height: 70vh;
-  background-size: cover;
 }
 body .contact {
   background-image: url("../assets/contact.webp");

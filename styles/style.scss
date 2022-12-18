@@ -1,6 +1,7 @@
 @import "./textStyles";
 @import "./navStyles";
 @import "./headerStyles";
+@import "./aboutStyles";
 
 html, body {
     width: 100%;
@@ -18,12 +19,6 @@ body {
     }
     nav {
         font-family: $headerFont;
-    }
-    header {
-        background-image: url("../assets/header.webp");
-        width: 100vw;
-        height: 70vh;
-        background-size: cover;
     }
     .contact {
         background-image: url("../assets/contact.webp");

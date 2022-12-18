@@ -1,0 +1,14 @@
+
+section.about {
+    padding: 2%;
+    h2 {
+        font-size: 5vw;
+    }
+    .picture-bio {
+        display: flex;
+        flex-direction: row-reverse;
+        img {
+            width: 30vw;
+        }
+    }
+}
