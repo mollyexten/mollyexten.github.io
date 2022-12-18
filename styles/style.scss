@@ -15,6 +15,9 @@ body {
     a {
         @include linkStyles();
     }
+    nav {
+        font-family: $headerFont;
+    }
     header {
         background-image: url("../assets/header.webp");
         width: 100%;
