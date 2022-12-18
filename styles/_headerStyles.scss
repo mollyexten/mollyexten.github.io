@@ -1,0 +1,19 @@
+header {
+    background-image: url("../assets/header.webp");
+    width: 100%;
+    margin: 15vh 0px 0px 0px;
+    height: 70vh;
+    background-size: cover;
+    h1 {
+        padding: 2vw;
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        h1 {
+            font-size: 8vmin;
+        }
+    }
+}
