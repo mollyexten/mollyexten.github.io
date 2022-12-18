@@ -2,19 +2,18 @@
     body {
         font-size: 16px;    
         nav {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 20vh;
             h1 {
                 font-size: 12vmin;
-                width: 80%;
-                padding: 20px;
+                align-self: center;
             }
-            .mobile-nav {
+            ul {
                 display: flex;
-                .hamburger-icon {
-                    fill: #555664;
-                }
-            }
-            .desktop-nav {
-                display: none;
+                flex-direction: row;
+                justify-content: space-between;
             }
         }
     }
@@ -24,15 +23,23 @@
 @media (min-width: 641px ) {
     body {
         font-size: 20px;
-        .mobile-nav {
-            display: none;
-        }
-        .desktop-nav {
+        nav {
             display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 20vh;
+            h1 {
+                font-size: 12vmin;
+                width: 60%
+            }
             ul {
                 display: flex;
+                flex-direction: row;
                 justify-content: space-around;
-                width: 67vw;
+                font-size: 6vmin;
+                width: 40%;
+                align-self: flex-end;
             }
         }
     }

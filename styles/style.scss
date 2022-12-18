@@ -1,5 +1,5 @@
 @import "./textStyles";
-// @import "./responsiveStyles";
+@import "./responsiveStyles";
 
 html, body {
     width: 100%;
@@ -14,17 +14,6 @@ body {
     }
     a {
         @include linkStyles();
-    }
-    nav {
-        font-family: $headerFont;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100vw;
-        height: 20vh;
-        h2 {
-            width: 33vw;
-        }
     }
     header {
         background-image: url("../assets/header.webp");

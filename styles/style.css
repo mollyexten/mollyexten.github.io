@@ -3,6 +3,50 @@ ul li {
   list-style: none;
 }
 
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+  body nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+  }
+  body nav h1 {
+    font-size: 12vmin;
+    align-self: center;
+  }
+  body nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 641px) {
+  body {
+    font-size: 20px;
+  }
+  body nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+  }
+  body nav h1 {
+    font-size: 12vmin;
+    width: 60%;
+  }
+  body nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 6vmin;
+    width: 40%;
+    align-self: flex-end;
+  }
+}
 html, body {
   width: 100%;
 }
@@ -25,17 +69,6 @@ body a:hover {
 }
 body a:visited {
   text-decoration: none;
-}
-body nav {
-  font-family: "Arvo", serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  height: 20vh;
-}
-body nav h2 {
-  width: 33vw;
 }
 body header {
   background-image: url("../assets/header.webp");
