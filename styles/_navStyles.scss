@@ -16,12 +16,12 @@ nav {
     align-items: center;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 1;
     background-color: hsla(0,0%,100%,.85);
     h1 {
         font-size: 6vw;
         width: 50%;
-        // text-align: center;
         @include noBuffer();
     }
     ul {
@@ -51,7 +51,7 @@ nav {
 }
 
 
-@media (min-width: 641px ) {
+@media (min-width: 641px) {
     body {
         nav {
             @include flexStyle(row, space-between);
