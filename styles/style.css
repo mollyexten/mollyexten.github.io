@@ -83,6 +83,7 @@ section.about h2 {
   font-size: 5vw;
 }
 section.about .bio {
+  margin-right: 15px;
   display: flex;
   flex-direction: column;
   line-height: 1.7;
