@@ -1,0 +1,23 @@
+.contact-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    ul {
+        width: 60%;
+    }
+    picture {
+        width: 40%;
+        padding: 2vw;
+        display: flex;
+        img {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-info {
+        flex-direction: column;
+    }
+}

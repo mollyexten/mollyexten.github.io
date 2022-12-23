@@ -96,6 +96,29 @@ section.about .bio h3 {
   margin: 0;
 }
 
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contact-info ul {
+  width: 60%;
+}
+.contact-info picture {
+  width: 40%;
+  padding: 2vw;
+  display: flex;
+}
+.contact-info picture img {
+  width: 80%;
+}
+
+@media (max-width: 640px) {
+  .contact-info {
+    flex-direction: column;
+  }
+}
 html, body {
   width: 100%;
 }
@@ -122,9 +145,4 @@ body a:visited {
 }
 body nav {
   font-family: "Arvo", serif;
-}
-body .contact {
-  background-image: url("../assets/contact.webp");
-  background-size: cover;
-  height: 50vh;
 }/*# sourceMappingURL=style.css.map */
