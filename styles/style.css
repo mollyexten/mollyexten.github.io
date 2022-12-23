@@ -75,48 +75,58 @@ header h1 {
     font-size: 8vmin;
   }
 }
-section.about {
-  padding: 2%;
-}
 section.about h2 {
   font-size: 5vw;
 }
-section.about .picture-bio {
+section.about .bio {
   display: flex;
+  flex-direction: column;
   line-height: 1.7;
 }
+section.about .bio .view-resume {
+  align-self: center;
+  font-size: 1.5em;
+}
+section.about .bio h3 {
+  margin: 0;
+}
 
-@media (max-width: 640px) {
+@media (max-width: 720px) {
   .picture-bio {
-    flex-direction: column;
-  }
-  .picture-bio .bio {
-    width: 90vw;
     display: flex;
     flex-direction: column;
   }
-  .picture-bio .bio .view-resume {
-    align-self: center;
-    font-size: 1.2em;
-  }
-  .picture-bio picture {
+  picture {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .picture-bio picture img {
-    width: 80%;
+  picture img {
+    width: 70%;
     align-self: center;
   }
 }
-@media (min-width: 641px) {
+@media (min-width: 721px) {
   .picture-bio {
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
   }
-  .picture-bio img {
+  .picture-bio .bio {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .picture-bio picture {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin-top: 4vh;
+  }
+  .picture-bio picture img {
     max-width: 35vw;
+  }
+  .picture-bio .skills-resume {
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 }
 html, body {
@@ -126,7 +136,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
   color: #555664;
 }
@@ -150,10 +160,4 @@ body .contact {
   background-image: url("../assets/contact.webp");
   background-size: cover;
   height: 50vh;
-}
-
-@media (max-width: 640px) {
-  body {
-    font-size: 18px;
-  }
 }/*# sourceMappingURL=style.css.map */

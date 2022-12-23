@@ -10,7 +10,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 18px;
     @include standardFont();
     h1, h2, h3, .view-resume {
         font-family: $headerFont;
@@ -25,11 +25,5 @@ body {
         background-image: url("../assets/contact.webp");
         background-size: cover;
         height: 50vh;
-    }
-}
-
-@media (max-width: 640px) {
-    body {
-        font-size: 18px;
     }
 }
