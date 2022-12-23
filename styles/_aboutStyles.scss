@@ -5,6 +5,7 @@ section.about {
     }
     .picture-bio {
         display: flex;
+        line-height: 1.7;
     }
 }
 
@@ -13,15 +14,26 @@ section.about {
         flex-direction: column;
         .bio {
             width: 90vw;
-            picture {
-                width: 100%;
-                img {
-                    width: 90%;
-                }
+            display: flex;
+            flex-direction: column;
+            .view-resume {
+                align-self: center;
+                font-size: 1.2em;
+            }
+        }
+        picture {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            img {
+                width: 80%;
+                align-self: center;
             }
         }
     }
 }
+
+
 
 @media (min-width: 641px) {
     .picture-bio {
