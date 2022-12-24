@@ -1,9 +1,14 @@
+#contact {
+    font-size: 5vw;
+    padding: 2vw;
+}
 .contact-info {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    ul {
+    padding: 2vw;
+    table {
         width: 60%;
     }
     picture {

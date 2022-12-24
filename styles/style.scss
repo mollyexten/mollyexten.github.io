@@ -6,6 +6,7 @@
 
 html, body {
     width: 100%;
+    margin: 0px;
 }
 
 body {
@@ -21,5 +22,8 @@ body {
     }
     nav {
         font-family: $headerFont;
+    }
+    footer {
+        padding-left: 2vw;
     }
 }
