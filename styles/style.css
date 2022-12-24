@@ -122,11 +122,6 @@ section.about .bio h3 {
   width: 80%;
 }
 
-@media (max-width: 640px) {
-  .contact-info {
-    flex-direction: column;
-  }
-}
 html, body {
   width: 100%;
   margin: 0px;
