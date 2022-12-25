@@ -38,13 +38,15 @@ nav {
         nav {
             @include flexStyle(column, space-around);
             h1 {
-                font-size: 10vmin;
+                font-size: 8vmin;
                 align-self: center;
                 text-align: center;
                 width: 100%;
+                margin-bottom: 0px;
+                margin-top: 0px;
             }
             ul {
-                font-size: 5vmin;
+                font-size: 4vmin;
                 width: 100%;
             }
         }
