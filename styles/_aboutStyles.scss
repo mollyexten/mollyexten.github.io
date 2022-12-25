@@ -9,6 +9,8 @@ section.about {
         margin-right: 15px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        max-width: 1200px;
         line-height: 1.7;
         .view-resume {
             align-self: center;
