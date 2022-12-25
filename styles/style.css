@@ -4,7 +4,7 @@ ul li {
 }
 
 nav {
-  width: 100%;
+  width: 100vw;
   height: 15vh;
   display: flex;
   flex-direction: row;
@@ -60,9 +60,8 @@ nav ul {
 }
 header {
   background-image: url("../assets/header.webp");
-  width: 100%;
+  width: 100vw;
   margin: 15vh 0px 0px 0px;
-  margin-left: 0px;
   height: 70vh;
   background-size: cover;
 }
@@ -98,39 +97,51 @@ section.about .bio h3 {
   margin: 0;
 }
 
-#contact {
+section.contact {
+  width: 100vw;
+}
+section.contact #contact {
   font-size: 5vw;
   padding: 2vw;
   margin-bottom: 0px;
 }
-
-.contact-info {
-  width: 100%;
+section.contact .contact-info {
+  width: 95vw;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
   padding: 2vw;
 }
-.contact-info ul {
-  width: 20%;
+section.contact .contact-info ul {
   line-height: 2.5;
 }
-.contact-info ul li {
+section.contact .contact-info ul li {
   padding-left: 0px;
   display: flex;
 }
-.contact-info picture {
-  width: 50%;
+section.contact .contact-info picture {
+  width: 50vw;
   display: flex;
 }
-.contact-info picture img {
+section.contact .contact-info picture img {
   width: 80%;
   border-radius: 2em;
 }
 
 @media (max-width: 640px) {
+  .contact-info {
+    justify-content: stretch;
+  }
   .contact-info ul {
-    width: 50%;
+    width: 50vw;
+    padding-left: 0px;
+  }
+  .contact-info picture {
+    justify-content: flex-end;
+  }
+  .contact-info picture img {
+    width: 100%;
+    align-self: center;
   }
 }
 html, body {
