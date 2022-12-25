@@ -17,6 +17,11 @@ body {
     h1, h2, h3, .view-resume {
         font-family: $headerFont;
     }
+    #about, #contact {
+        margin-top: -15vh;
+        padding-bottom: 10vh;
+        display: block;
+    }
     a {
         @include linkStyles();
     }
