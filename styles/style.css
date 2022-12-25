@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:wght@300&display=swap");
-ul li {
-  list-style: none;
-}
-
 nav {
   width: 100vw;
   height: 15vh;
@@ -17,9 +13,7 @@ nav {
   background-color: hsla(0deg, 0%, 100%, 0.85);
 }
 nav h1 {
-  font-size: 6vw;
   width: 50%;
-  padding: 2vw;
 }
 nav h1 button {
   font-family: inherit;
@@ -50,7 +44,6 @@ nav ul {
     justify-content: space-around;
   }
   body nav h1 {
-    font-size: 8vmin;
     align-self: center;
     text-align: center;
     width: 100%;
@@ -79,67 +72,43 @@ header {
   height: 70vh;
   background-size: cover;
 }
-header h1 {
-  padding: 2vw;
-  font-size: 5vw;
-}
 
 @media (max-width: 640px) {
   header h1 {
     font-size: 8vmin;
   }
 }
-section.about {
-  padding: 10px;
-}
-section.about h2 {
-  font-size: 5vw;
-  padding: 2vw;
-}
-section.about .bio {
-  padding-left: 2vw;
-  margin-right: 15px;
+.bio {
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1200px;
   line-height: 1.7;
 }
-section.about .bio .view-resume {
+.bio .view-resume {
   align-self: center;
   font-size: 1.5em;
 }
-section.about .bio h3 {
-  margin: 0;
-}
 
-section.contact {
-  width: 100vw;
-}
-section.contact h2 {
-  font-size: 5vw;
-  padding: 2vw;
-  margin-bottom: 0px;
-}
-section.contact .contact-info {
+.contact-info {
   width: 95vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 2vw;
 }
-section.contact .contact-info ul {
+.contact-info ul {
   line-height: 2.5;
 }
-section.contact .contact-info ul li {
+.contact-info ul li {
   padding-left: 0px;
   display: flex;
 }
-section.contact .contact-info picture {
+.contact-info picture {
   width: 50vw;
   display: flex;
 }
-section.contact .contact-info picture img {
+.contact-info picture img {
   width: 80%;
   border-radius: 2em;
 }
@@ -160,25 +129,19 @@ section.contact .contact-info picture img {
     align-self: center;
   }
 }
-html, body {
-  width: 100%;
-  margin: 0px;
-}
-
 body {
-  display: flex;
-  flex-direction: column;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   color: #555664;
 }
-body h1, body h2, body h3, body .view-resume {
+body nav, body h1, body h2, body h3, body .view-resume {
   font-family: "Arvo", serif;
 }
-body #about, body #contact {
-  margin-top: -15vh;
-  padding-bottom: 10vh;
-  display: block;
+body h1 {
+  padding: 2vw;
+}
+body h2, body h3 {
+  margin-bottom: 0px;
 }
 body a {
   color: #555664;
@@ -190,9 +153,46 @@ body a:hover {
 body a:visited {
   text-decoration: none;
 }
-body nav {
-  font-family: "Arvo", serif;
+body ul li {
+  list-style: none;
 }
-body footer {
-  padding-left: 2vw;
+
+@media (max-width: 920px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 921px) {
+  h1 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+}
+html, body {
+  width: 100%;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body section.about, body section.contact {
+  padding: 2vw;
+}
+body h2 #about, body h2 #contact {
+  margin-top: -15vh;
+  padding-bottom: 10vh;
+  display: block;
 }/*# sourceMappingURL=style.css.map */

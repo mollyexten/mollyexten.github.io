@@ -6,13 +6,6 @@ $primaryFont: 'Roboto', sans-serif;
 $headerFont: 'Arvo', serif;
 $fontColor: #555664;
 
-
-ul {
-    li {
-        list-style: none;
-    }
-}
-
 // Mixins
 @mixin standardFont{
     font-family: $primaryFont;
@@ -25,5 +18,52 @@ ul {
         text-decoration: underline;
     } &:visited {
         text-decoration: none;
+    }
+}
+
+// Text styling
+body {
+    font-size: 18px;
+    @include standardFont();
+    nav, h1, h2, h3, .view-resume {
+        font-family: $headerFont;
+    }
+    h1 {
+        padding: 2vw;
+    }
+    h2, h3 {
+        margin-bottom: 0px;
+    }
+    a {
+        @include linkStyles();
+    }
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+}
+
+@media (max-width: 920px){
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 921px) {
+    h1 {
+        font-size: 5vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    h3 {
+        font-size: 3vw;
     }
 }

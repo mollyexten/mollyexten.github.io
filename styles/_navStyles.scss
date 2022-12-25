@@ -20,9 +20,7 @@ nav {
     z-index: 1;
     background-color: hsla(0,0%,100%,.85);
     h1 {
-        font-size: 6vw;
         width: 50%;
-        padding: 2vw;
         button {
             font-family: inherit;
             font-size: inherit;
@@ -49,7 +47,6 @@ nav {
         nav {
             @include flexStyle(column, space-around);
             h1 {
-                font-size: 8vmin;
                 align-self: center;
                 text-align: center;
                 width: 100%;
