@@ -22,8 +22,19 @@ nav {
     h1 {
         font-size: 6vw;
         width: 50%;
-        // @include noBuffer();
         padding: 2vw;
+        button {
+            font-family: inherit;
+            font-size: inherit;
+            font-style: inherit;
+            color: inherit;
+            background-color: transparent;
+            border-width: 0;
+        }
+        button:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
     ul {
         font-size: 3vw;
