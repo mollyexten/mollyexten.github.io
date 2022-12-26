@@ -1,8 +1,8 @@
+@import "./navStyles";
+
 .contact-info {
     width: 95vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include flexStyle(row, space-around);
     ul {
         line-height: 2.5;
         li {

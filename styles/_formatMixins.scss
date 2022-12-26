@@ -1,0 +1,10 @@
+@mixin noBuffer {
+    margin: 0px;
+    padding: 0px;
+}
+
+@mixin flexStyle ($flex-direction, $justify-content) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}

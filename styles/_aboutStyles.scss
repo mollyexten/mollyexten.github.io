@@ -1,12 +1,20 @@
+@import "./navStyles";
+
+// @mixin flexStyle ($flex-direction, $justify-content) {
+//     display: flex;
+//     flex-direction: $flex-direction;
+//     justify-content: $justify-content;
+// }
+
 .bio {
+    @include flexStyle(column, center);
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
     margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     max-width: 1200px;
     line-height: 1.7;
     .view-resume {
         align-self: center;
-        font-size: 1.5em;
     }
 }

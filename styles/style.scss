@@ -3,15 +3,15 @@
 @import "./aboutStyles";
 @import "./contactStyles";
 @import "./textStyles";
+@import "./formatMixins";
 
 html, body {
     width: 100%;
-    margin: 0px;
+    @include noBuffer();
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    @include flexStyle(column, flex-start);
     section.about, section.contact, footer {
         padding-left: 2vw;
     }
