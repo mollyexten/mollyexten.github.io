@@ -12,18 +12,6 @@ nav {
     background-color: hsla(0,0%,100%,.85);
     h1 {
         width: 50%;
-        button {
-            font-family: inherit;
-            font-size: inherit;
-            font-style: inherit;
-            color: inherit;
-            background-color: transparent;
-            border-width: 0;
-        }
-        button:hover {
-            text-decoration: underline;
-            cursor: pointer;
-        }
     }
     ul {
         font-size: 3vw;
