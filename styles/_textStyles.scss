@@ -34,6 +34,9 @@ body {
     h2, h3 {
         margin-bottom: 0px;
     }
+    h2 span:target + span {
+        background-color: rgb(236, 234, 102);
+    }
     a {
         @include linkStyles();
     }
