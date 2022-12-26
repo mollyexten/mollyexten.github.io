@@ -104,6 +104,9 @@ header {
   padding-left: 0px;
   display: flex;
 }
+.contact-info ul li svg {
+  align-self: center;
+}
 .contact-info picture {
   width: 50vw;
   display: flex;

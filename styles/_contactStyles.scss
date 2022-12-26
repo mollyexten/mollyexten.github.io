@@ -8,6 +8,9 @@
         li {
             padding-left: 0px;
             display: flex;
+            svg {
+                align-self: center;
+            }
         }
     }
     picture {
