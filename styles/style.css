@@ -188,8 +188,8 @@ body {
   display: flex;
   flex-direction: column;
 }
-body section.about, body section.contact {
-  padding: 2vw;
+body section.about, body section.contact, body footer {
+  padding-left: 2vw;
 }
 body h2 #about, body h2 #contact {
   margin-top: -15vh;

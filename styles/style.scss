@@ -12,9 +12,10 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    section.about, section.contact {
-        padding: 2vw;
+    section.about, section.contact, footer {
+        padding-left: 2vw;
     }
+    // Extra space for section links in navbar
     h2 #about, h2 #contact {
         margin-top: -15vh;
         padding-bottom: 10vh;
