@@ -1,0 +1,16 @@
+name: Process mabl insight
+# This workflow is triggered on new mabl insights
+on: [repository_dispatch]
+
+jobs:
+  build:
+    name: Process mabl Insight
+    runs-on: ubuntu-latest
+    steps:
+      # Add you custom logic below this line - example below
+      - name: Print event type
+        run: echo 'event_type:${{ github.event.event_type }} name:${{ github.event_name }}' # Will be 'mabl_insight'
+      - name: Print Insight details
+        run: echo 'id:${{ github.event.client_payload.insight.id }} type:${{ github.event.client_payload.insight.insight_type }}'
+      - name: Print Insight payload as JSON
+        run: echo 'insight payload: ${{ toJson(github.event.client_payload.insight) }}'
