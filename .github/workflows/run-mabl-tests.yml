@@ -1,4 +1,6 @@
-on: [pull_request]
+on:
+  issues:
+    types: [opened, edited, milestoned]
 
 name: Run mabl tests
 
