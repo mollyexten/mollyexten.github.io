@@ -1,6 +1,6 @@
 on: [push]
 
-name: Run mabl tests
+name: Run mabl tests 
 
 jobs:
   test:
