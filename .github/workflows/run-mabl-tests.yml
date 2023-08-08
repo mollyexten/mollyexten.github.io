@@ -1,6 +1,4 @@
-on:
-  issues:
-    types: [opened, edited, milestoned]
+on: [push]
 
 name: Run mabl tests
 
