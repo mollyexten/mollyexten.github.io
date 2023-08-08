@@ -1,0 +1,23 @@
+on: [push]
+
+name: mabl Simple Example
+
+jobs:
+  test:
+    name: mabl Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Functional test deployment
+        id: mabl-test-deployment
+        uses: mablhq/github-run-tests-action@v1
+        env:
+          # Use a "CI/CD Integration" type of mabl API key
+          MABL_API_KEY: ${{ secrets.MABL_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # Mabl ID for Molly test site application
+          application-id: deZargrK9KzeIZaXAZr6TQ-a
+          # Mabl ID for Prod environment
+          environment-id: Ojc0fnJOoTBgSEZSHUCrhQ-e
