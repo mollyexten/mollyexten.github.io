@@ -5,7 +5,7 @@ on: [repository_dispatch]
 
 jobs:
   build:
-    name: Process mabl insight
+    name: Process mabl insight 
     runs-on: ubuntu-latest
     steps:
       # Print information about the mabl insight
