@@ -1,10 +1,10 @@
-on: [push]
+on: [pull_request]
 
-name: mabl Simple Example
+name: Run mabl tests
 
 jobs:
   test:
-    name: mabl Test
+    name: Trigger a mabl deployment event
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
