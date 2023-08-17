@@ -1,12 +1,14 @@
-name: Process mabl insight
+# Located in .github/workflows/mabl-insight-workflow.yml
+name: Custom mabl insight workflow
 # This workflow is triggered on new mabl insights
 on: [repository_dispatch]
 
 jobs:
   build:
-    name: Process mabl Insight
+    name: Process mabl insight
     runs-on: ubuntu-latest
     steps:
-      - env:
-          INSIGHT: ${{ github.event.client_payload.insight }}
-        run: echo $INSIGHT
+      # Print information about the mabl insight
+      - name: Print insight details
+        run: echo 'id:${{ github.event.client_payload.insight.id }} type:${{ github.event.client_payload.insight.insight_type }}'
+
