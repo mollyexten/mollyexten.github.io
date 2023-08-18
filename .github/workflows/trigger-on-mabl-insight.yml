@@ -11,4 +11,3 @@ jobs:
       # Print information about the mabl insight
       - name: Print insight details
         run: echo 'id:${{ github.event.client_payload.insight.id }} type:${{ github.event.client_payload.insight.insight_type }}'
-
