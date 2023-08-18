@@ -7,6 +7,7 @@ jobs:
   build:
     name: Process mabl insight
     runs-on: ubuntu-latest
+    if: github.event.event_type == 'mabl_insight'
     steps:
       # Print information about the mabl insight
       - name: Print insight details
